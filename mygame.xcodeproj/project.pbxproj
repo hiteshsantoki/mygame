@@ -14,6 +14,8 @@
 		1D80F7E01FA4875C00F899A4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F7DE1FA4875C00F899A4 /* LaunchScreen.storyboard */; };
 		1D80F7EB1FA4875C00F899A4 /* mygameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D80F7EA1FA4875C00F899A4 /* mygameTests.swift */; };
 		1D80F7F61FA4875C00F899A4 /* mygameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D80F7F51FA4875C00F899A4 /* mygameUITests.swift */; };
+		1D80F8041FA487D700F899A4 /* background_final.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F8031FA487D700F899A4 /* background_final.png */; };
+		1D80F8081FA491A200F899A4 /* buttion1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F8071FA491A200F899A4 /* buttion1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +49,8 @@
 		1D80F7F11FA4875C00F899A4 /* mygameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mygameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D80F7F51FA4875C00F899A4 /* mygameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mygameUITests.swift; sourceTree = "<group>"; };
 		1D80F7F71FA4875C00F899A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1D80F8031FA487D700F899A4 /* background_final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_final.png; sourceTree = "<group>"; };
+		1D80F8071FA491A200F899A4 /* buttion1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttion1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 				1D80F7D51FA4875C00F899A4 /* AppDelegate.swift */,
 				1D80F7D71FA4875C00F899A4 /* ViewController.swift */,
 				1D80F7D91FA4875C00F899A4 /* Main.storyboard */,
+				1D80F8031FA487D700F899A4 /* background_final.png */,
+				1D80F8071FA491A200F899A4 /* buttion1.png */,
 				1D80F7DC1FA4875C00F899A4 /* Assets.xcassets */,
 				1D80F7DE1FA4875C00F899A4 /* LaunchScreen.storyboard */,
 				1D80F7E11FA4875C00F899A4 /* Info.plist */,
@@ -235,7 +241,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1D80F8041FA487D700F899A4 /* background_final.png in Resources */,
 				1D80F7E01FA4875C00F899A4 /* LaunchScreen.storyboard in Resources */,
+				1D80F8081FA491A200F899A4 /* buttion1.png in Resources */,
 				1D80F7DD1FA4875C00F899A4 /* Assets.xcassets in Resources */,
 				1D80F7DB1FA4875C00F899A4 /* Main.storyboard in Resources */,
 			);
@@ -419,8 +427,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 999SP6A3DA;
 				INFOPLIST_FILE = mygame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Cronabit-1.mygame";
+				PRODUCT_BUNDLE_IDENTIFIER = "Cronabit-1.BloodLocator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -432,8 +441,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 999SP6A3DA;
 				INFOPLIST_FILE = mygame/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Cronabit-1.mygame";
+				PRODUCT_BUNDLE_IDENTIFIER = "Cronabit-1.BloodLocator";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
