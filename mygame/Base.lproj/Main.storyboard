@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -101,20 +102,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_final.png" translatesAutoresizingMaskIntoConstraints="NO" id="diM-rO-jZk">
-                                <rect key="frame" x="0.0" y="0.0" width="213" height="214"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="214" id="uk0-u1-UiH"/>
-                                    <constraint firstAttribute="width" constant="213" id="zTm-gD-miA"/>
-                                </constraints>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background_final.png" translatesAutoresizingMaskIntoConstraints="NO" id="rbP-k3-hp2">
-                                <rect key="frame" x="454" y="0.0" width="213" height="214"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="213" id="ECW-Ny-efd"/>
-                                    <constraint firstAttribute="height" constant="214" id="Ijf-pL-43L"/>
-                                </constraints>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x8F-7I-wcN">
                                 <rect key="frame" x="0.0" y="332" width="213" height="43"/>
                                 <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -135,17 +122,25 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Next"/>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A-for-apple.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oyz-f6-5Bp">
+                                <rect key="frame" x="20" y="0.0" width="627" height="265"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="265" id="CnV-6z-grE"/>
+                                    <constraint firstAttribute="width" constant="627" id="W0c-1e-jQD"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NCY-KM-Ccu" firstAttribute="top" secondItem="5e2-EO-FkR" secondAttribute="bottom" id="1Et-Ab-aca"/>
+                            <constraint firstItem="oyz-f6-5Bp" firstAttribute="top" secondItem="GO3-cl-DhA" secondAttribute="bottom" constant="-20" id="4jz-wK-dTf"/>
+                            <constraint firstAttribute="leadingMargin" secondItem="oyz-f6-5Bp" secondAttribute="leading" id="IZz-mL-7Lx"/>
+                            <constraint firstItem="oyz-f6-5Bp" firstAttribute="top" secondItem="UPw-fW-k55" secondAttribute="topMargin" id="Wsl-G4-PR3"/>
+                            <constraint firstItem="NCY-KM-Ccu" firstAttribute="top" secondItem="oyz-f6-5Bp" secondAttribute="bottom" constant="110" id="YkQ-Cr-ACz"/>
                             <constraint firstAttribute="trailing" secondItem="5e2-EO-FkR" secondAttribute="trailing" id="di1-pc-p23"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oyz-f6-5Bp" secondAttribute="trailing" id="f7b-Q4-RZR"/>
                             <constraint firstItem="NCY-KM-Ccu" firstAttribute="top" secondItem="x8F-7I-wcN" secondAttribute="bottom" id="hEh-qe-y0M"/>
                             <constraint firstItem="x8F-7I-wcN" firstAttribute="leading" secondItem="UPw-fW-k55" secondAttribute="leading" id="ltT-HR-bej"/>
-                            <constraint firstItem="diM-rO-jZk" firstAttribute="top" secondItem="UPw-fW-k55" secondAttribute="top" id="obt-pq-qVc"/>
-                            <constraint firstItem="rbP-k3-hp2" firstAttribute="top" secondItem="UPw-fW-k55" secondAttribute="top" id="sHR-KU-soj"/>
-                            <constraint firstItem="diM-rO-jZk" firstAttribute="leading" secondItem="UPw-fW-k55" secondAttribute="leading" id="sSx-W4-EFt"/>
-                            <constraint firstAttribute="trailing" secondItem="rbP-k3-hp2" secondAttribute="trailing" id="tUz-md-iwj"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -155,6 +150,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="A-for-apple.jpg" width="994" height="460"/>
         <image name="alphabet1.png" width="80" height="80"/>
         <image name="background_final.png" width="667" height="375"/>
         <image name="color_final.png" width="80" height="80"/>

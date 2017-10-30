@@ -22,6 +22,7 @@
 		1DF3DFDB1FA72751006B1AAE /* rhymes_final.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3DFDA1FA72751006B1AAE /* rhymes_final.png */; };
 		1DF3DFDD1FA72A60006B1AAE /* play_final.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3DFDC1FA72A60006B1AAE /* play_final.png */; };
 		1DF3DFDF1FA72BC2006B1AAE /* settibg_final.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3DFDE1FA72BC2006B1AAE /* settibg_final.png */; };
+		1DF3DFE11FA74111006B1AAE /* A-for-apple.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1DF3DFE01FA74111006B1AAE /* A-for-apple.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		1DF3DFDA1FA72751006B1AAE /* rhymes_final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rhymes_final.png; sourceTree = "<group>"; };
 		1DF3DFDC1FA72A60006B1AAE /* play_final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = play_final.png; sourceTree = "<group>"; };
 		1DF3DFDE1FA72BC2006B1AAE /* settibg_final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settibg_final.png; sourceTree = "<group>"; };
+		1DF3DFE01FA74111006B1AAE /* A-for-apple.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "A-for-apple.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				1D80F7D91FA4875C00F899A4 /* Main.storyboard */,
 				1D80F8031FA487D700F899A4 /* background_final.png */,
 				1DF3DFD81FA726AE006B1AAE /* color_final.png */,
+				1DF3DFE01FA74111006B1AAE /* A-for-apple.jpg */,
 				1DF3DFDE1FA72BC2006B1AAE /* settibg_final.png */,
 				1DF3DFD61FA724EE006B1AAE /* spelling_final.png */,
 				1DF3DFDC1FA72A60006B1AAE /* play_final.png */,
@@ -269,6 +272,7 @@
 				1D80F8081FA491A200F899A4 /* buttion1.png in Resources */,
 				1D80F7DD1FA4875C00F899A4 /* Assets.xcassets in Resources */,
 				1DF3DFD71FA724EE006B1AAE /* spelling_final.png in Resources */,
+				1DF3DFE11FA74111006B1AAE /* A-for-apple.jpg in Resources */,
 				1D80F7DB1FA4875C00F899A4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
