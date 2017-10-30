@@ -14,21 +14,29 @@ class ViewController: UIViewController {
     @IBOutlet var alphabutton: UIButton!
     @IBOutlet var colorbutton: UIButton!
     @IBOutlet var rhymesbutton: UIButton!
+    @IBOutlet var playbutton: UIButton!
+    @IBOutlet var settingbutton: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        speclingbutton.frame = CGRect(x: 197, y: 62, width: 80, height: 80)
-        speclingbutton.layer.cornerRadius = 0.5 * speclingbutton.bounds.size.width
-        speclingbutton.clipsToBounds = true
-        alphabutton.frame = CGRect(x: 50, y: 62, width: 80, height: 80)
+        alphabutton.frame = CGRect(x: 20, y: 62, width: 80, height: 80)
         alphabutton.layer.cornerRadius = 0.5 * alphabutton.bounds.size.width
         alphabutton.clipsToBounds = true
-        colorbutton.frame = CGRect(x: 335, y: 62, width: 80, height: 80)
+        speclingbutton.frame = CGRect(x: 140, y: 62, width: 80, height: 80)
+        speclingbutton.layer.cornerRadius = 0.5 * speclingbutton.bounds.size.width
+        speclingbutton.clipsToBounds = true
+        colorbutton.frame = CGRect(x: 250, y: 62, width: 80, height: 80)
         colorbutton.layer.cornerRadius = 0.5 * colorbutton.bounds.size.width
         colorbutton.clipsToBounds = true
-        rhymesbutton.frame = CGRect(x: 403, y: 62, width: 80, height: 80)
+        rhymesbutton.frame = CGRect(x: 360, y: 62, width: 80, height: 80)
         rhymesbutton.layer.cornerRadius = 0.5 * rhymesbutton.bounds.size.width
         rhymesbutton.clipsToBounds = true
+        playbutton.frame = CGRect(x: 30, y: 250, width: 50, height: 50)
+        playbutton.layer.cornerRadius = 0.5 * playbutton.bounds.size.width
+        playbutton.clipsToBounds = true
+        settingbutton.frame = CGRect(x: 100, y: 250, width: 50, height: 50)
+        settingbutton.layer.cornerRadius = 0.5 * settingbutton.bounds.size.width
+        settingbutton.clipsToBounds = true
 
     }
 
