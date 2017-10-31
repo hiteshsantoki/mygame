@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="-32.833583208395808" y="72.799999999999997"/>
         </scene>
-        <!--View Controller-->
+        <!--Alpha View Controller-->
         <scene sceneID="oH9-gz-MFR">
             <objects>
-                <viewController id="oTW-a4-WxS" sceneMemberID="viewController">
+                <viewController id="oTW-a4-WxS" customClass="alphaViewController" customModule="mygame" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="GO3-cl-DhA"/>
                         <viewControllerLayoutGuide type="bottom" id="NCY-KM-Ccu"/>
@@ -111,6 +111,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="previous"/>
+                                <connections>
+                                    <action selector="prev:" destination="oTW-a4-WxS" eventType="touchUpInside" id="HvQ-3b-Zal"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5e2-EO-FkR">
                                 <rect key="frame" x="454" y="332" width="213" height="43"/>
@@ -121,6 +124,9 @@
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="next:" destination="oTW-a4-WxS" eventType="touchUpInside" id="eYn-9c-f7k"/>
+                                </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A-for-apple.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oyz-f6-5Bp">
                                 <rect key="frame" x="20" y="0.0" width="627" height="265"/>
@@ -143,6 +149,11 @@
                             <constraint firstItem="x8F-7I-wcN" firstAttribute="leading" secondItem="UPw-fW-k55" secondAttribute="leading" id="ltT-HR-bej"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageview" destination="oyz-f6-5Bp" id="zJ6-bJ-tbe"/>
+                        <outlet property="nextbutton" destination="5e2-EO-FkR" id="zWJ-0h-Dy6"/>
+                        <outlet property="prevbutton" destination="x8F-7I-wcN" id="1ET-xo-be0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CTw-ct-E0r" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
