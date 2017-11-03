@@ -29,18 +29,18 @@
                                     <constraint firstAttribute="width" constant="667" id="8SI-Tv-SZA"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7U-Zl-Sv5">
-                                <rect key="frame" x="171" y="194" width="90" height="90"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X7U-Zl-Sv5">
+                                <rect key="frame" x="166" y="184" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="color4.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jB-AU-feE">
-                                <rect key="frame" x="171" y="46" width="90" height="90"/>
+                                <rect key="frame" x="171" y="46" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="spelling-final.png"/>
                             </button>
                             <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3rT-Fj-Fij">
-                                <rect key="frame" x="47" y="46" width="90" height="90"/>
+                                <rect key="frame" x="47" y="46" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="alpha_try_f1.png"/>
                                 <connections>
@@ -48,9 +48,12 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nNu-FR-Zb0">
-                                <rect key="frame" x="314" y="194" width="90" height="90"/>
+                                <rect key="frame" x="319" y="189" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" backgroundImage="rhyme_final2.png"/>
+                                <connections>
+                                    <segue destination="Lg5-hM-7lO" kind="show" id="3yj-R6-Xrh"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -71,6 +74,53 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-32.833583208395808" y="72.799999999999997"/>
+        </scene>
+        <!--Rhymes Controller-->
+        <scene sceneID="lUg-ln-wO1">
+            <objects>
+                <viewController id="Lg5-hM-7lO" customClass="rhymesController" customModule="mygame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pq1-K7-l3l"/>
+                        <viewControllerLayoutGuide type="bottom" id="wso-Ld-UyU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Tkb-mT-Okt">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y3U-o7-h0V">
+                                <rect key="frame" x="0.0" y="124" width="74" height="81"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="81" id="4Z6-tY-tWG"/>
+                                    <constraint firstAttribute="width" constant="74" id="Drm-i2-LBP"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="home-icon.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="dsw-Xg-EvP"/>
+                                </connections>
+                            </button>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o37-hM-mWe">
+                                <rect key="frame" x="116" y="0.0" width="551" height="375"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="o37-hM-mWe" firstAttribute="top" secondItem="Tkb-mT-Okt" secondAttribute="top" id="5FW-Pc-HR7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="o37-hM-mWe" secondAttribute="trailing" constant="-20" id="9mk-1b-2v1"/>
+                            <constraint firstItem="wso-Ld-UyU" firstAttribute="top" secondItem="o37-hM-mWe" secondAttribute="bottom" id="EDC-S3-7ln"/>
+                            <constraint firstItem="o37-hM-mWe" firstAttribute="leading" secondItem="Y3U-o7-h0V" secondAttribute="trailing" constant="42" id="Z3A-L6-CSS"/>
+                            <constraint firstItem="Y3U-o7-h0V" firstAttribute="top" secondItem="pq1-K7-l3l" secondAttribute="bottom" constant="104" id="c7Q-Rw-3X5"/>
+                            <constraint firstAttribute="trailing" secondItem="o37-hM-mWe" secondAttribute="trailing" id="dWB-8g-XL6"/>
+                            <constraint firstItem="o37-hM-mWe" firstAttribute="leading" secondItem="Tkb-mT-Okt" secondAttribute="leadingMargin" constant="96" id="eAW-4y-Nkb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="webview" destination="o37-hM-mWe" id="5mT-pt-qKq"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bph-Mo-KzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292" y="727"/>
         </scene>
         <!--Alpha View Controller-->
         <scene sceneID="oH9-gz-MFR">
@@ -111,18 +161,15 @@
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="A-for-apple.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="oyz-f6-5Bp">
-                                <rect key="frame" x="150" y="0.0" width="517" height="265"/>
+                                <rect key="frame" x="0.0" y="0.0" width="667" height="265"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="517" id="2cz-LJ-rkL"/>
-                                    <constraint firstAttribute="height" constant="265" id="RWz-T3-te4"/>
+                                    <constraint firstAttribute="width" constant="667" id="32n-mX-29q"/>
+                                    <constraint firstAttribute="height" constant="265" id="zFZ-ne-cPU"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfb-2V-LD1">
-                                <rect key="frame" x="20" y="74" width="97" height="116"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="116" id="7On-Iz-QoW"/>
-                                    <constraint firstAttribute="width" constant="97" id="uTB-f5-8tU"/>
-                                </constraints>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qfb-2V-LD1">
+                                <rect key="frame" x="20" y="28" width="74" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="home-icon.png"/>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="ebd-xf-UGu"/>
@@ -132,16 +179,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="NCY-KM-Ccu" firstAttribute="top" secondItem="5e2-EO-FkR" secondAttribute="bottom" id="1Et-Ab-aca"/>
-                            <constraint firstItem="oyz-f6-5Bp" firstAttribute="leading" secondItem="qfb-2V-LD1" secondAttribute="trailing" constant="33" id="26s-Wk-RlU"/>
-                            <constraint firstAttribute="trailing" secondItem="oyz-f6-5Bp" secondAttribute="trailing" id="6nL-72-CU1"/>
-                            <constraint firstItem="qfb-2V-LD1" firstAttribute="top" secondItem="GO3-cl-DhA" secondAttribute="bottom" constant="54" id="HvR-pp-q5d"/>
-                            <constraint firstItem="NCY-KM-Ccu" firstAttribute="top" secondItem="qfb-2V-LD1" secondAttribute="bottom" constant="185" id="OOf-Qz-znw"/>
-                            <constraint firstAttribute="leadingMargin" secondItem="qfb-2V-LD1" secondAttribute="leading" id="YEP-Pf-p9N"/>
+                            <constraint firstAttribute="trailing" secondItem="oyz-f6-5Bp" secondAttribute="trailing" id="AII-Sl-7du"/>
+                            <constraint firstItem="oyz-f6-5Bp" firstAttribute="leading" secondItem="UPw-fW-k55" secondAttribute="leading" id="Rjn-ut-OOb"/>
                             <constraint firstAttribute="trailing" secondItem="5e2-EO-FkR" secondAttribute="trailing" id="di1-pc-p23"/>
                             <constraint firstItem="NCY-KM-Ccu" firstAttribute="top" secondItem="x8F-7I-wcN" secondAttribute="bottom" id="hEh-qe-y0M"/>
+                            <constraint firstItem="oyz-f6-5Bp" firstAttribute="top" secondItem="UPw-fW-k55" secondAttribute="top" id="iUX-rk-Shz"/>
                             <constraint firstItem="x8F-7I-wcN" firstAttribute="leading" secondItem="UPw-fW-k55" secondAttribute="leading" id="ltT-HR-bej"/>
-                            <constraint firstItem="NCY-KM-Ccu" firstAttribute="top" secondItem="oyz-f6-5Bp" secondAttribute="bottom" constant="110" id="rzw-yz-eTk"/>
-                            <constraint firstItem="oyz-f6-5Bp" firstAttribute="top" secondItem="UPw-fW-k55" secondAttribute="top" id="t21-Fp-2Lc"/>
                         </constraints>
                     </view>
                     <connections>
@@ -159,6 +202,12 @@
         <image name="A-for-apple.jpg" width="994" height="460"/>
         <image name="alpha_try_f1.png" width="203" height="187"/>
         <image name="background_final.png" width="667" height="375"/>
+        <image name="color4.png" width="150" height="147"/>
         <image name="home-icon.png" width="256" height="256"/>
+        <image name="rhyme_final2.png" width="150" height="150"/>
+        <image name="spelling-final.png" width="200" height="200"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="dsw-Xg-EvP"/>
+    </inferredMetricsTieBreakers>
 </document>
