@@ -33,8 +33,11 @@
                                 <rect key="frame" x="166" y="184" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="color4.png"/>
+                                <connections>
+                                    <segue destination="1Jz-7L-tMW" kind="show" id="vah-Fj-ZzM"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jB-AU-feE">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6jB-AU-feE">
                                 <rect key="frame" x="171" y="46" width="100" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="spelling-final.png"/>
@@ -95,7 +98,7 @@
                                 </constraints>
                                 <state key="normal" backgroundImage="home-icon.png"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="show" id="dsw-Xg-EvP"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="nGR-5K-lqQ"/>
                                 </connections>
                             </button>
                             <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o37-hM-mWe">
@@ -120,7 +123,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bph-Mo-KzW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="292" y="727"/>
+            <point key="canvasLocation" x="-33" y="807"/>
         </scene>
         <!--Alpha View Controller-->
         <scene sceneID="oH9-gz-MFR">
@@ -197,6 +200,97 @@
             </objects>
             <point key="canvasLocation" x="635.53223388305855" y="72.799999999999997"/>
         </scene>
+        <!--Color Controller-->
+        <scene sceneID="9ce-dX-WKg">
+            <objects>
+                <viewController id="1Jz-7L-tMW" customClass="ColorController" customModule="mygame" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="SGm-la-3jD"/>
+                        <viewControllerLayoutGuide type="bottom" id="kCr-11-vHC"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="EX8-fU-Ps4">
+                        <rect key="frame" x="0.0" y="0.0" width="667" height="375"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hBS-LU-OPP">
+                                <rect key="frame" x="20" y="28" width="74" height="81"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="home-icon.png"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="show" id="sU4-IC-d7K"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dE2-XT-cgV">
+                                <rect key="frame" x="84" y="117" width="89" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.98584872479999996" green="0.94633716339999996" blue="0.77775448560000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lz-yu-xKb">
+                                <rect key="frame" x="205" y="63" width="76" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="red_action:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="B40-bf-glG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOt-xi-R3B">
+                                <rect key="frame" x="295" y="63" width="76" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="red_action:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="Aml-3G-lR6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deA-77-QDh">
+                                <rect key="frame" x="295" y="117" width="76" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="red_action:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="2HP-7t-FCl"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvm-Z0-HvN">
+                                <rect key="frame" x="205" y="117" width="76" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="red_action:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="Ved-zw-WWO"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ct-Ov-IL0">
+                                <rect key="frame" x="99" y="201" width="59" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cdM-HL-s97">
+                                <rect key="frame" x="194" y="209" width="60" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="next:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="FIU-Ti-kaA"/>
+                                    <action selector="red_action:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="LWS-8j-W4S"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="blue_button" destination="Yvm-Z0-HvN" id="edx-7g-pge"/>
+                        <outlet property="color_label" destination="dE2-XT-cgV" id="Zpz-ff-fOa"/>
+                        <outlet property="green_button" destination="eOt-xi-R3B" id="3Xn-Cl-NpH"/>
+                        <outlet property="ibimage" destination="1ct-Ov-IL0" id="ekU-4n-kZA"/>
+                        <outlet property="next_color" destination="cdM-HL-s97" id="jqT-5T-Huw"/>
+                        <outlet property="red_button" destination="8lz-yu-xKb" id="AQX-fb-oXX"/>
+                        <outlet property="yellow_button" destination="deA-77-QDh" id="07b-n6-nQA"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Adh-Kq-BQM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="635.53223388305855" y="805.60000000000002"/>
+        </scene>
     </scenes>
     <resources>
         <image name="A-for-apple.jpg" width="994" height="460"/>
@@ -208,6 +302,6 @@
         <image name="spelling-final.png" width="200" height="200"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="dsw-Xg-EvP"/>
+        <segue reference="sU4-IC-d7K"/>
     </inferredMetricsTieBreakers>
 </document>

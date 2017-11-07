@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1D5C9E781FB08767000B80F0 /* ColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D5C9E771FB08767000B80F0 /* ColorController.swift */; };
 		1D80F7D61FA4875C00F899A4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D80F7D51FA4875C00F899A4 /* AppDelegate.swift */; };
 		1D80F7D81FA4875C00F899A4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D80F7D71FA4875C00F899A4 /* ViewController.swift */; };
 		1D80F7DB1FA4875C00F899A4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F7D91FA4875C00F899A4 /* Main.storyboard */; };
@@ -16,6 +17,8 @@
 		1D80F7F61FA4875C00F899A4 /* mygameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1D80F7F51FA4875C00F899A4 /* mygameUITests.swift */; };
 		1D80F8041FA487D700F899A4 /* background_final.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F8031FA487D700F899A4 /* background_final.png */; };
 		1D80F8081FA491A200F899A4 /* buttion1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1D80F8071FA491A200F899A4 /* buttion1.png */; };
+		1DEAE3CE1FB05DBA00AF0FD8 /* right.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAE3CD1FB05DBA00AF0FD8 /* right.png */; };
+		1DEAE3D01FB05E3C00AF0FD8 /* wrong.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DEAE3CF1FB05E3C00AF0FD8 /* wrong.png */; };
 		1DEF019B1FA858C800B87B53 /* alphaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DEF019A1FA858C800B87B53 /* alphaViewController.swift */; };
 		1DEF3CCF1FAC775E00FE68DF /* color.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF3CCE1FAC775E00FE68DF /* color.png */; };
 		1DEF3CD51FAC794200FE68DF /* color4.png in Resources */ = {isa = PBXBuildFile; fileRef = 1DEF3CD41FAC794200FE68DF /* color4.png */; };
@@ -103,6 +106,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D5C9E771FB08767000B80F0 /* ColorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
 		1D80F7D21FA4875C00F899A4 /* mygame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mygame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D80F7D51FA4875C00F899A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D80F7D71FA4875C00F899A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -118,6 +122,8 @@
 		1D80F7F71FA4875C00F899A4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1D80F8031FA487D700F899A4 /* background_final.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background_final.png; sourceTree = "<group>"; };
 		1D80F8071FA491A200F899A4 /* buttion1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = buttion1.png; sourceTree = "<group>"; };
+		1DEAE3CD1FB05DBA00AF0FD8 /* right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = right.png; sourceTree = "<group>"; };
+		1DEAE3CF1FB05E3C00AF0FD8 /* wrong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = wrong.png; sourceTree = "<group>"; };
 		1DEF019A1FA858C800B87B53 /* alphaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = alphaViewController.swift; sourceTree = "<group>"; };
 		1DEF3CCE1FAC775E00FE68DF /* color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color.png; sourceTree = "<group>"; };
 		1DEF3CD41FAC794200FE68DF /* color4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = color4.png; sourceTree = "<group>"; };
@@ -245,7 +251,10 @@
 				1DEF3CD61FAC7B5600FE68DF /* rhyme_final2.png */,
 				1DEF3CCE1FAC775E00FE68DF /* color.png */,
 				1D80F7D91FA4875C00F899A4 /* Main.storyboard */,
+				1D5C9E771FB08767000B80F0 /* ColorController.swift */,
 				1DF20E931FAB3678007CA98D /* home-icon.png */,
+				1DEAE3CF1FB05E3C00AF0FD8 /* wrong.png */,
+				1DEAE3CD1FB05DBA00AF0FD8 /* right.png */,
 				1DF20E951FAB43ED007CA98D /* alpha_try_f1.png */,
 				1D80F8031FA487D700F899A4 /* background_final.png */,
 				1DF20E911FAB3566007CA98D /* aaaa.png */,
@@ -445,6 +454,7 @@
 				1DF3DFD51FA720B0006B1AAE /* alphabet1.png in Resources */,
 				1DF20E7C1FAB19E4007CA98D /* p.mp3 in Resources */,
 				1DF3DFDF1FA72BC2006B1AAE /* settibg_final.png in Resources */,
+				1DEAE3CE1FB05DBA00AF0FD8 /* right.png in Resources */,
 				1DEF3CCF1FAC775E00FE68DF /* color.png in Resources */,
 				1DFBF5A11FA85B3000F057A7 /* E-for-eagle.jpg in Resources */,
 				1DFBF5AE1FA85B3000F057A7 /* R-for-rabbit.jpg in Resources */,
@@ -490,6 +500,7 @@
 				1DFBF5B51FA85B3000F057A7 /* Y-for-yak.jpg in Resources */,
 				1DFBF5B81FA8707300F057A7 /* iphone_6_original.mp3 in Resources */,
 				1DFBF5AD1FA85B3000F057A7 /* Q-for-quail.jpg in Resources */,
+				1DEAE3D01FB05E3C00AF0FD8 /* wrong.png in Resources */,
 				1DF20E7B1FAB19E4007CA98D /* o.mp3 in Resources */,
 				1DFBF5A91FA85B3000F057A7 /* M-for-mango.jpg in Resources */,
 				1DFBF5A41FA85B3000F057A7 /* H-for-horse.jpg in Resources */,
@@ -537,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1D80F7D81FA4875C00F899A4 /* ViewController.swift in Sources */,
+				1D5C9E781FB08767000B80F0 /* ColorController.swift in Sources */,
 				1DF20E9A1FAB5AF4007CA98D /* rhymesController.swift in Sources */,
 				1D80F7D61FA4875C00F899A4 /* AppDelegate.swift in Sources */,
 				1DEF019B1FA858C800B87B53 /* alphaViewController.swift in Sources */,
@@ -697,7 +709,7 @@
 				INFOPLIST_FILE = mygame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Cronabit-1.BloodLocator";
+				PRODUCT_BUNDLE_IDENTIFIER = "Cronabit-1.mapview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -711,7 +723,7 @@
 				INFOPLIST_FILE = mygame/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Cronabit-1.BloodLocator";
+				PRODUCT_BUNDLE_IDENTIFIER = "Cronabit-1.mapview";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
