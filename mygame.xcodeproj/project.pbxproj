@@ -106,7 +106,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1D5C9E771FB08767000B80F0 /* ColorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorController.swift; sourceTree = "<group>"; };
+		1D5C9E771FB08767000B80F0 /* ColorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorController.swift; path = mygame/ColorController.swift; sourceTree = "<group>"; };
 		1D80F7D21FA4875C00F899A4 /* mygame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mygame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D80F7D51FA4875C00F899A4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1D80F7D71FA4875C00F899A4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -223,6 +223,7 @@
 			children = (
 				1DF20E991FAB5AF4007CA98D /* rhymesController.swift */,
 				1DEF019A1FA858C800B87B53 /* alphaViewController.swift */,
+				1D5C9E771FB08767000B80F0 /* ColorController.swift */,
 				1DFBF5B71FA8707300F057A7 /* iphone_6_original.mp3 */,
 				1D80F7D41FA4875C00F899A4 /* mygame */,
 				1D80F7E91FA4875C00F899A4 /* mygameTests */,
@@ -251,7 +252,6 @@
 				1DEF3CD61FAC7B5600FE68DF /* rhyme_final2.png */,
 				1DEF3CCE1FAC775E00FE68DF /* color.png */,
 				1D80F7D91FA4875C00F899A4 /* Main.storyboard */,
-				1D5C9E771FB08767000B80F0 /* ColorController.swift */,
 				1DF20E931FAB3678007CA98D /* home-icon.png */,
 				1DEAE3CF1FB05E3C00AF0FD8 /* wrong.png */,
 				1DEAE3CD1FB05DBA00AF0FD8 /* right.png */,

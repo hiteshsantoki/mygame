@@ -228,15 +228,15 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lz-yu-xKb">
-                                <rect key="frame" x="205" y="63" width="76" height="46"/>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8lz-yu-xKb">
+                                <rect key="frame" x="201" y="63" width="76" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="red_action:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="B40-bf-glG"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOt-xi-R3B">
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eOt-xi-R3B">
                                 <rect key="frame" x="295" y="63" width="76" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -244,20 +244,12 @@
                                     <action selector="red_action:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="Aml-3G-lR6"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deA-77-QDh">
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="deA-77-QDh">
                                 <rect key="frame" x="295" y="117" width="76" height="46"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <connections>
                                     <action selector="red_action:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="2HP-7t-FCl"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="2" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvm-Z0-HvN">
-                                <rect key="frame" x="205" y="117" width="76" height="46"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                <connections>
-                                    <action selector="red_action:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="Ved-zw-WWO"/>
                                 </connections>
                             </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1ct-Ov-IL0">
@@ -274,17 +266,25 @@
                                     <action selector="red_action:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="LWS-8j-W4S"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvm-Z0-HvN">
+                                <rect key="frame" x="201" y="117" width="76" height="46"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <connections>
+                                    <action selector="red_action:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="Ved-zw-WWO"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
-                        <outlet property="blue_button" destination="Yvm-Z0-HvN" id="edx-7g-pge"/>
+                        <outlet property="blue_button" destination="Yvm-Z0-HvN" id="uBT-NJ-Msv"/>
                         <outlet property="color_label" destination="dE2-XT-cgV" id="Zpz-ff-fOa"/>
-                        <outlet property="green_button" destination="eOt-xi-R3B" id="3Xn-Cl-NpH"/>
+                        <outlet property="green_button" destination="eOt-xi-R3B" id="Mld-Vf-UqM"/>
                         <outlet property="ibimage" destination="1ct-Ov-IL0" id="ekU-4n-kZA"/>
                         <outlet property="next_color" destination="cdM-HL-s97" id="jqT-5T-Huw"/>
-                        <outlet property="red_button" destination="8lz-yu-xKb" id="AQX-fb-oXX"/>
-                        <outlet property="yellow_button" destination="deA-77-QDh" id="07b-n6-nQA"/>
+                        <outlet property="red_button" destination="8lz-yu-xKb" id="Cjr-rq-BD6"/>
+                        <outlet property="yellow_button" destination="deA-77-QDh" id="oJU-sD-Equ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Adh-Kq-BQM" userLabel="First Responder" sceneMemberID="firstResponder"/>

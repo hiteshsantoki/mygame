@@ -8,6 +8,44 @@
 
 import UIKit
 
+extension UIColor {
+    convenience init(hex: String) {
+        let scanner = Scanner(string: hex)
+        scanner.scanLocation = 0
+        
+        var rgbValue: UInt64 = 0
+        
+        scanner.scanHexInt64(&rgbValue)
+        
+        let r = (rgbValue & 0xff0000) >> 16
+        let g = (rgbValue & 0xff00) >> 8
+        let b = rgbValue & 0xff
+        
+        self.init(
+            red: CGFloat(r) / 0xff,
+            green: CGFloat(g) / 0xff,
+            blue: CGFloat(b) / 0xff, alpha: 1
+        )
+    }
+}
+extension UIColor {
+    var toHexString: String {
+        var r: CGFloat = 0
+        var g: CGFloat = 0
+        var b: CGFloat = 0
+        var a: CGFloat = 0
+        
+        self.getRed(&r, green: &g, blue: &b, alpha: &a)
+        
+        return String(
+            format: "%02X%02X%02X",
+            Int(r * 0xff),
+            Int(g * 0xff),
+            Int(b * 0xff)
+        )
+    }
+}
+
 class ColorController: UIViewController {
 
     @IBOutlet var ibimage: UIImageView!
@@ -16,89 +54,82 @@ class ColorController: UIViewController {
     @IBOutlet var green_button: UIButton!
     @IBOutlet var blue_button: UIButton!
     @IBOutlet var yellow_button: UIButton!
+ 
     @IBOutlet var next_color: UIButton!
   
-
+    var colorarray = ["green" : "00FF00","red" : "FF0000", "blue" : "0000FF", "yellow" : "FFFF00"]
+    
+    
+   
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        color_label.text = "Red"
-        next_color.isHidden = true
+        for (key,value) in colorarray
+        {
+            color_label.text = "\(key)"
+            
+            if(key == "red")
+            {
+                red_button.backgroundColor = UIColor(hex: "\(value)")
+                
+            }
+            else if(key == "green")
+            {
+                green_button.backgroundColor = UIColor(hex: "\(value)")
+                
+            }
+            else if(key == "blue")
+            {
+                 blue_button.backgroundColor = UIColor(hex: "\(value)")
+                
+            }
+            else
+            {
+             yellow_button.backgroundColor = UIColor(hex: "\(value)")
+            }
+        }
         
-        red_button.backgroundColor = UIColor.red
-        green_button.backgroundColor = UIColor.green
-        blue_button.backgroundColor = UIColor.blue
-        yellow_button.backgroundColor = UIColor.yellow
+        next_color.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
 
     }
-    
+
     @IBAction func red_action(_ sender: AnyObject)
     {
-        if(sender.tag == 0 && color_label.text == "Red")
+        var bgcolor: UIColor?
+        bgcolor = sender.backgroundColor
+        //print(bgcolor!)
+        let hex = bgcolor?.toHexString
+        print(hex!)
+        
+        func getkeyfromvalue(keyvalue:String) -> String
         {
-            ibimage.image = UIImage(named: "right.png")
-            color_label.text = "Green"
-            next_color.isHidden = false
+            for (key,value) in colorarray
+            {
+                if (value.contains(keyvalue))
+                {
+                    return key
+                }
+            }
+            return " "
         }
-        else if(sender.tag == 1 && color_label.text == "Green")
+        let currentcolor = getkeyfromvalue(keyvalue: hex!)
+        
+        if(currentcolor == color_label.text)
         {
             ibimage.image = UIImage(named: "right.png")
-            color_label.text = "Blue"
-            next_color.isHidden = false
-
-        }
-        else if(sender.tag == 2 && color_label.text == "Blue")
-        {
-            ibimage.image = UIImage(named: "right.png")
-            color_label.text = "Yellow"
-            next_color.isHidden = false
-
-        }
-        else if(sender.tag == 3 && color_label.text == "Yellow")
-        {
-            ibimage.image = UIImage(named: "right.png")
-            color_label.text = "Red"
-            next_color.isHidden = false
-
         }
         else
         {
             ibimage.image = UIImage(named: "wrong.png")
-            next_color.isHidden = true
         }
-        
     }
 
     @IBAction func next(_ sender: AnyObject)
     {
-        if(red_button.tag == 0)
-        {
-            red_button.tag = 1
-            red_button.backgroundColor = UIColor.green
-            
-        }
-        if(green_button.tag == 1)
-        {
-            green_button.tag = 2
-            green_button.backgroundColor = UIColor.blue
-            
-        }
-        if(blue_button.tag == 2)
-        {
-            blue_button.tag = 3
-            blue_button.backgroundColor = UIColor.yellow
-            
-        }
-        if(yellow_button.tag == 3)
-        {
-            yellow_button.tag = 0
-            yellow_button.backgroundColor = UIColor.red
-        }
-        
     }
     
 }
