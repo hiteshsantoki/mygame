@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Foundation
+
+
 
 extension UIColor {
     convenience init(hex: String) {
@@ -45,9 +48,22 @@ extension UIColor {
         )
     }
 }
+extension Array
+{
+    mutating func shuffle()
+    {
+        for _ in 0..<5
+        {
+            sort { (_,_) in arc4random() < arc4random() }
+        }
+    }
+}
+
+
 
 class ColorController: UIViewController {
-
+    
+    
     @IBOutlet var ibimage: UIImageView!
     @IBOutlet var color_label: UILabel!
     @IBOutlet var red_button: UIButton!
@@ -73,17 +89,17 @@ class ColorController: UIViewController {
                 red_button.backgroundColor = UIColor(hex: "\(value)")
                 
             }
-            else if(key == "green")
+            if(key == "green")
             {
                 green_button.backgroundColor = UIColor(hex: "\(value)")
                 
             }
-            else if(key == "blue")
+            if(key == "blue")
             {
                  blue_button.backgroundColor = UIColor(hex: "\(value)")
                 
             }
-            else
+            if(key == "yellow")
             {
              yellow_button.backgroundColor = UIColor(hex: "\(value)")
             }
@@ -99,12 +115,49 @@ class ColorController: UIViewController {
 
     @IBAction func red_action(_ sender: AnyObject)
     {
+       ibimage.isHidden = false
+        var rightanswer = 0
         var bgcolor: UIColor?
         bgcolor = sender.backgroundColor
-        //print(bgcolor!)
         let hex = bgcolor?.toHexString
-        print(hex!)
+        func getkeyfromvalue(keyvalue:String) -> String
+        {
+            for (key,value) in colorarray
+            {
+                if (value.contains(keyvalue))
+                {
+                    return key
+                }
+            }
+            return " "
+        }
+        let currentcolor = getkeyfromvalue(keyvalue: hex!)
         
+        if(currentcolor == color_label.text)
+        {
+             ibimage.image = UIImage(named: "right.png")
+              rightanswer = 1
+        }
+        else
+        {
+                ibimage.image = UIImage(named: "wrong.png")
+        }
+        if(rightanswer == 1)
+        {
+            next_color.isHidden = false
+            
+        }
+    }
+
+   @IBAction  func next(_ sender: AnyObject)
+    {
+        next_color.isHidden = true
+        ibimage.isHidden = true
+        
+       var rightanswer = 0
+        var bgcolor: UIColor?
+        bgcolor = sender.backgroundColor
+        let hex = bgcolor?.toHexString
         func getkeyfromvalue(keyvalue:String) -> String
         {
             for (key,value) in colorarray
@@ -121,15 +174,49 @@ class ColorController: UIViewController {
         if(currentcolor == color_label.text)
         {
             ibimage.image = UIImage(named: "right.png")
+            rightanswer = 1
         }
         else
         {
             ibimage.image = UIImage(named: "wrong.png")
         }
-    }
+        if(rightanswer == 1)
+        {
+            next_color.isHidden = false
+            ibimage.isHidden = false
+        }
+        func randomizeArr(arr: [String: String]) -> String?
+        {
+            let keys: [String] = [String](arr.keys.map { $0 }) // Gathers all keys and converts to string
+            let randomNumber = Int(arc4random_uniform(UInt32(arr.count))) // Generates random number
+            let key: String = keys[randomNumber] // Gets a random key
+            guard let _: String = arr[key] else {
+                return nil
+            }
+            return key
+        }
+        let randno = (randomizeArr(arr: colorarray)!)
+        for (key,value) in colorarray
+        {
+            color_label.text = String(describing: randno)
+            if(key == "red")
+            {
+                red_button.backgroundColor = UIColor(hex: "\(value)")
+            }
+            if(key == "green")
+            {
+                green_button.backgroundColor = UIColor(hex: "\(value)")
+            }
+            if(key == "blue")
+            {
+                blue_button.backgroundColor = UIColor(hex: "\(value)")
+            }
+            if(key == "yellow")
+            {
+                yellow_button.backgroundColor = UIColor(hex: "\(value)")
+            }
+        }
 
-    @IBAction func next(_ sender: AnyObject)
-    {
     }
-    
 }
+

@@ -263,7 +263,6 @@
                                 <state key="normal" title="Next"/>
                                 <connections>
                                     <action selector="next:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="FIU-Ti-kaA"/>
-                                    <action selector="red_action:" destination="1Jz-7L-tMW" eventType="touchUpInside" id="LWS-8j-W4S"/>
                                 </connections>
                             </button>
                             <button opaque="NO" tag="3" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yvm-Z0-HvN">
